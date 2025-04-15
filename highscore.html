@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skor Akhir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Score</h1>
+        <p>Skor Anda: <span id="finalScore">0</span></p>
+        <a href="index.html" class="button">Halaman Utama</a>
+        <a href="level.html" class="button">Bermain Lagi</a>
+    </div>
+    <script>
+        document.getElementById("finalScore").innerText = localStorage.getItem("lastScore") || 0;
+    </script>
+</body>
+</html>
